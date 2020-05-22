@@ -316,6 +316,7 @@ export default class LinkedInModal extends React.Component {
 
     return (
       <WebView
+        useWebKit
         source={{ uri: this.getAuthorizationUrl() }}
         onNavigationStateChange={this.onNavigationStateChange}
         startInLoadingState
